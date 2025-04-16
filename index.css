@@ -140,3 +140,38 @@
     #scrollToTopBtn:hover {
       transform: scale(1.1);
     }
+    #githubLink {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      text-decoration: none;
+      font-size: 0.9rem;
+      color: var(--text-color);
+      transition: color 0.3s ease;
+    }
+    
+    #githubLink:hover {
+      transform: scale(1.1);
+    }
+    
+    #githubLink img {
+      width: 24px;
+      height: 24px;
+      transition: filter 0.3s ease;
+    }
+    
+    body:not(.dark-theme) #githubLink img {
+      filter: invert(0); /* Black icon for light theme */
+    }
+    
+    body.dark-theme #githubLink img {
+      filter: invert(1); /* White icon for dark theme */
+    }
+    body:not(.dark-theme) #footergithub{
+      filter: invert(0); /* Black icon for light theme */
+    }
+    
+    body.dark-theme #footergithub  {
+      filter: invert(1); /* White icon for dark theme */
+    }
+    
